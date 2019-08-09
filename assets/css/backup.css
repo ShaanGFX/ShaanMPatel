@@ -1,0 +1,275 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 20px;
+  background: #212121; /* color of nav bar*/
+}
+
+
+
+/* The typing effect ___________________________________________________________________________*/
+@keyframes typing {
+  from { width: 0 }
+  to { width: 25% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #ff3d3d }
+}
+
+h1.logo {
+	display:inline-block;
+	color: #212121;
+	font-weight:bold;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.08em solid #ff3d3d; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin-top:0;
+	margin-bottom:50px;
+  letter-spacing: .1em;
+  animation:
+    typing 2.2s steps(50, end),
+    blink-caret 0.6s step-end infinite;
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-transition:0.6s;
+	transition: 0.6s;
+}
+
+h1.logo:hover{
+	-webkit-transition:0.6s;
+	transition: 0.6s;
+}
+/* ___________________________________________________________________________________________________*/
+
+
+
+
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: right;
+padding:10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  position: relative;
+  display: inline-block;
+  margin-left: 75px;
+
+
+}
+
+nav a {
+  color: white; /* color of nav links*/
+  text-decoration: none;
+  text-transform: uppercase;
+	transition: all ease-out 0.5s;
+	-webkit-user-select: none;
+user-select: none;
+}
+
+nav a:hover {
+  color: #ff3d3d; /* color of nav links on hover*/
+
+}
+
+.sibling-fade:hover li a:not(:hover) {
+  opacity: 0.6;
+	transition: 0.6s;
+
+}
+
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: #ff3d3d; /* color of top hover line effect*/
+  position: absolute;
+
+  top: -8px;
+  width: 0%;
+  transition: all ease-in-out 250ms; /* time for top line effect */
+
+  color: white;
+  left: 50%;
+  right: 50%;
+}
+
+nav a:hover::before {
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+
+
+/*
+SOCIAL
+MEDIA
+ICONS
+*/
+i.fa-linkedin {
+	display:inline;
+  -webkit-transition:0.6s;
+  transition: 0.6s;
+	color: white;
+	border-radius: 50%;
+	float:left;
+	padding:6px;
+	font-size:20px;
+		margin-right:10px;
+}
+
+i.fa-linkedin:hover {
+    color: #ff3d3d;
+		background:white;
+			transform: translateY(-3px);
+}
+
+i.fa-instagram {
+	display:inline;
+	-webkit-transition:0.6s;
+	transition: 0.6s;
+	color: white;
+	border-radius: 50%;
+	float:left;
+	padding:6px;
+	font-size:20px;
+
+	margin-right: 10px;
+}
+
+i.fa-instagram:hover {
+    color: #ff3d3d;
+		background:white;
+			transform: translateY(-3px);
+}
+
+i.fa-envelope {
+	display:inline;
+	-webkit-transition:0.6s;
+	transition: 0.6s;
+	color: white;
+	border-radius: 50%;
+	float:left;
+	padding:6px;
+	font-size:20px;
+}
+
+i.fa-envelope:hover {
+    color: #ff3d3d;
+		background:white;
+	transform: translateY(-3px);
+}
+
+span.socials{
+	position:absolute;
+	display:inline-block;
+	left:1%;
+	top:2.7%;
+}
+
+
+/*
+download resume
+*/
+
+div.dlresume{
+	display:inline;
+padding:18px;
+font-family: "Montserrat", sans-serif;
+text-transform: uppercase;
+font-weight:bold;
+font-size: 18px;
+background: #ff4949;
+color: white;
+border: none;
+-webkit-transition:0.6s;
+transition: 0.6s;
+text-align:center;
+cursor: default;
+}
+
+div.dlresume:hover{
+
+background: #ff5b5b;
+opacity:0.9;
+	-webkit-transition:0.6s;
+	transition: 0.6s;
+}
+
+div.dlcontainer{
+	display:block;
+	text-align:center;
+	margin-top:50px;
+}
+
+div.footer{
+	display:absolute;
+	margin:0;
+	background: #ff5b5b;
+	width:auto;
+height:200px;
+text-align:center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+button{
+	position: relative;
+	padding: 10px;
+	background: #fff;
+	border: 2px solid #212121;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+button:active{
+	background:#212121;
+	color:white;
+}
+*/

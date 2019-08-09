@@ -1,0 +1,72 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css);
+
+form {
+  margin-top: 0;
+  text-align: center;
+}
+
+.form-name {
+  font-family: "Montserrat", sans-serif;
+  width: 700px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.form-email {
+  font-family: "Montserrat", sans-serif;
+  width: 700px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.form-message {
+  font-family: "Montserrat", sans-serif;
+  width: 700px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  margin-bottom: 20px;
+  resize: both;
+  max-width: 700px;
+  min-width: 700px;
+  min-height: 25px;
+}
+
+button.sendbtn {
+	font-family: "Montserrat", sans-serif;
+  background: rgba(255, 61, 61, 0.95);
+  border-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  height: 60px;
+  width: 700px;
+  margin-top: 15px;
+	-webkit-transition: ease-in-out: 250ms;
+	transition: ease-in-out 250ms;
+	cursor: pointer;
+}
+
+.sendbtn:hover {
+  background: rgba(255, 255, 255, 0.95);
+	color: #ff3d3d;
+	-webkit-transition: 250ms;
+	transition: ease-in-out 250ms;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+}
+
+.sendbtn:active {
+outline:none;
+}
