@@ -308,3 +308,10 @@ p.under-construction {
   border: none;
   text-align: center;
 }
+
+
+div.g-recaptcha {
+display: inline-block;
+margin: auto;
+
+}
