@@ -1,83 +1,23 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css);
 
-
-
-div.maincontent {
-  background-color: transparent;
-}
-
 body {
+  background-image: url("ShaanGFX/ShaanMPatel/blob/master/images/bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  background-image: url("images/bg1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
-div.shaan-img{
-  margin: auto;
-	text-align: center;
-	width: 150px;
-	height: 150px;
-	background-image: url("images/shaan.jpg");
-	background-size:contain;
-	background-repeat: no-repeat;
-	border-radius: 50%;
-	margin-bottom: 12px;
-  margin-top: 50px;
-
+header {
+  padding: 20px;
+  background: white; /* bg color of nav bar */
+	opacity: 0.9;
+	filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.1));
 }
 
-
-
-.bruh
-{
-	animation: tada 1000ms;
-}
-
-@keyframes tada {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  10%,
-  20% {
-    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-  }
-
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-  }
-
-  40%,
-  60%,
-  80% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1, h2, h3, h4, h5, h6, p {
 	margin: 0px;
 	padding: 0px;
 }
@@ -87,16 +27,26 @@ p {
   margin: 0 auto;
 }
 
-header {
-  padding: 20px;
-  background: white; /* color of nav bar*/
-	opacity: 0.9;
-	filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.1));
+div.maincontent {
+  background-color: transparent;
 }
 
+div.shaan-img {
+  background-image: url("ShaanGFX/ShaanMPatel/blob/master/images/shaan.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 12px;
+  margin-top: 50px;
+	text-align: center;
+	width: 150px;
+	height: 150px;
+}
 
-
-/* LOADER */
+/*
+LOADER (White flash on page load)
+*/
 
 div.loader {
 	pointer-events:none;
@@ -117,6 +67,7 @@ div.loader {
     animation-fill-mode: forwards;
 }
 
+
 /* Site loader overlay */
 @keyframes fadeOut {
     100% {
@@ -126,17 +77,13 @@ div.loader {
 }
 
 
-
-
-
-
-/* Typing effect for home page header */
+/* Typing effect for HOME page header */
 @keyframes typing-home {
   from { width: 0 }
   to { width: 40% }
 }
 
-/* Typing effect for contact page header */
+/* Typing effect for CONTACT page header */
 @keyframes typing-contact {
   from { width: 0 }
   to { width: 20% }
@@ -188,9 +135,6 @@ h1.contact-header {
 
 
 /* ___________________________________________________________________________________________________*/
-
-
-
 header::after {
   content: "";
   display: table;
@@ -215,7 +159,7 @@ nav li {
 }
 
 nav a {
-  color: black; /* color of nav links*/
+  color: black; /* color of nav links */
   text-decoration: none;
   text-transform: uppercase;
 	transition: all ease-out 500ms;
@@ -224,7 +168,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ff3d3d; /* color of nav links on hover*/
+  color: #ff3d3d; /* color of nav links on hover */
   text-decoration: none;
 }
 
@@ -237,7 +181,7 @@ nav a::before {
   content: "";
   display: block;
   height: 3px;
-  background-color: #ff3d3d; /* color of top hover line effect*/
+  background-color: #ff3d3d; /* color of top hover line effect */
   position: absolute;
   top: -8px;
   width: 0%;
@@ -253,13 +197,10 @@ nav a:hover::before {
   width: 100%;
 }
 
-
-
 /*
-SOCIAL
-MEDIA
-ICONS
+SOCIAL MEDIA ICONS
 */
+
 i.fa-linkedin-in {
 	display: inline-block;
   -webkit-transition: 600ms;
@@ -285,7 +226,6 @@ i.fa-instagram {
 	border-radius: 50%;
 	padding: 6px;
 	font-size: 20px;
-
 }
 
 i.fa-instagram:hover {
@@ -303,9 +243,7 @@ span.socials {
 }
 
 
-/*
-download resume___________________________________________________________________________
-*/
+/* DOWNLOAD RESUME */
 
 div.dlresume {
 	display: inline;
@@ -351,7 +289,6 @@ button.dlresume:hover {
 	-webkit-transition: 250ms;
 	transition: ease-in-out 250ms;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-
 	}
 
 button.dlresume:active {
@@ -360,8 +297,10 @@ button.dlresume:active {
 	border-color: transparent;
 }
 
+/* ___________________________________________________________________________________________________*/
 
 p.under-construction {
+  margin-top: 20px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 20px;
@@ -369,98 +308,3 @@ p.under-construction {
   border: none;
   text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-div.objective-container {
-  width: 50%;
-	text-align: center;
-	margin: auto;
-}
-
-div.objective-container h2{
-	display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  color: #303030;
-  margin-bottom: 20px;
-	margin-top: 10px;
-	cursor: default;
-
-}
-
-div.objective-container span{
-  font-family: "Montserrat", sans-serif;
-  display: block;
-  color: #303030;
-	background: rgba(255, 255, 255, 0.7);
-	box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.04);
-	padding: 25px;
-	font-size: 18px;
-}
-
-
-i.fa-bullseye {
-	display: block;
-	color: #303030;
-	font-size: 25px;
-}
-
-hr.hr-right {
-	display: inline-block;
-	width: 10%;
-	margin-left: 10px;
-	height: 8px;
-	background-image: linear-gradient(90deg, #ff3d3d, transparent);
-	border: 0;
-	height: 2px;
-}
-
-
-hr.hr-left {
-	display: inline-block;
-	width: 10%;
-	margin-right: 10px;
-	height: 8px;
-	background-image: linear-gradient(-90deg, #ff3d3d, transparent);
-	border: 0;
-	height: 2px;
-}
-
-
-
-
-
-
-
-
-div.tab-container {
-	display: block;
-	text-align: center;
-	margin: auto;
-}
-
-
-
-
-/*
-div.footer{
-display: block;
-position: absolute;
-opacity:0.8;
- width: 100%;
-	margin:0;
-bottom:0;
-	background: #ff5b5b;
-
-height:50px;
-text-align:center;
-
-}
-*/
