@@ -1,7 +1,7 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css);
 
 body {
-  background-image: url("ShaanGFX/ShaanMPatel/blob/master/images/bg1.jpg");
+  background-image: url("../images/bg1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
@@ -32,7 +32,7 @@ div.maincontent {
 }
 
 div.shaan-img {
-  background-image: url("ShaanGFX/ShaanMPatel/blob/master/images/shaan.jpg");
+  background-image: url("..images/shaan.jpg");
   background-size:contain;
   background-repeat: no-repeat;
   border-radius: 50%;
