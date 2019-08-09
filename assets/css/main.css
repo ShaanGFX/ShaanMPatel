@@ -11,7 +11,7 @@ body {
   padding: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  background: url("images/bg1.jpg");
+  background-image: url("images/bg1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -21,7 +21,7 @@ div.shaan-img{
 	text-align: center;
 	width: 150px;
 	height: 150px;
-	background: url("images/shaan.jpg");
+	background-image: url("images/shaan.jpg");
 	background-size:contain;
 	background-repeat: no-repeat;
 	border-radius: 50%;
